@@ -1,0 +1,64 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter: Run all Tests",
+      "type": "dart",
+      "request": "launch",
+      "program": "./test/"
+    },
+    {
+      "name": "Flutter Android",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "android",
+      "program": "Client/lib/main/main_dev.dart"
+    },
+    {
+      "name": "Flutter Chromebook",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "emulator-5554",
+      "program": "Client/lib/main/main_dev.dart"
+    },
+    {
+      "name": "Flutter iOS",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "ios",
+      "program": "Client/lib/main/main_dev.dart"
+    },
+    {
+      "name": "Flutter Web",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "chrome",
+      "program": "${workspaceFolder}/Client/lib/main/main_dev.dart",
+      "args": ["--web-port", "45501", "--web-enable-expression-evaluation"]
+    },
+    {
+      "name": ".NET Core Launch (web)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Server/bin/Debug/net5.0/MediaZ.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Server",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://+:49001;http://+:19001"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    }
+  ]
+}
